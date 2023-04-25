@@ -1,4 +1,4 @@
-*,::after,::before{box-sizing:border-box}a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0}img,picture,svg,video{display:block;max-width:100%}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}a{text-decoration: none; color: inherit;}
+*,::after,::before{box-sizing:border-box}a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0}img,picture,svg,video{display:block;max-width:100%}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}a{text-decoration: none; color: inherit;}::placeholder{color: white;}
 
 /* DEBUGGING 
 div {
@@ -19,7 +19,7 @@ nav {
     padding: 12px;
     border-bottom: 1px solid rgb(212, 212, 212);
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.5);
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.7);
 
     font-family: 'Oswald', 'Syne', sans-serif; 
     font-size: 16px;
@@ -27,6 +27,7 @@ nav {
     color: rgba(75, 75, 75, 0.7);;
 
     position: fixed;
+    z-index: 100;
     top: 0;
     width: 100%;
 }
@@ -82,7 +83,7 @@ li.logo {
 }
 
 .button {
-    background-color: #666966;
+    background-color: #3a3a3a;
     border: none;
     color: white;
     padding: 1px 12px;
@@ -92,7 +93,7 @@ li.logo {
     font-weight: 600;
     font-size: 16px;
     border-radius: 15px;
-    border: 1px solid #666966;
+    border: 1px solid #3a3a3a;
 }
 
 /*About me section*/
@@ -118,7 +119,7 @@ li.logo {
 
 .about-me__buttons {
     display: flex;
-    padding: 12px 24px 12px 0px;
+    padding-right: 24px;
     justify-content: space-between;
     align-items: flex-end;
 }
@@ -153,4 +154,74 @@ li.logo {
 
 .projects-wrapper div {
     flex: 50%;
+}
+
+/*FOOTER*/
+
+footer {
+    font-family: 'Questrial', 'Syne', sans-serif;
+    font-size: 16px;
+    background-color: #3a3a3a;
+    color: white;
+
+}
+
+.contact {
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact div {
+    flex: 50%;
+}
+
+.contact__heading {
+    padding-bottom: 12px;
+    font-size: 36px;
+}
+
+.contact__content {
+    padding-bottom: 6px;
+}
+label {
+    display: inline-block;
+}
+
+input,
+textarea {
+    margin-bottom: 10px;
+    padding: 6px 3px 6px 12px;
+    border: 1px solid white;
+    background-color: #696666;
+    width: 95%;
+}
+
+input {
+    height: 34px;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+.form-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-wrapper div {
+    flex: 50%;
+}
+
+.contact__button--position {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+
+.contact__button {
+    background-color: #696666;
+    padding: 10px 30px;
 }
