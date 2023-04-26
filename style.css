@@ -13,6 +13,10 @@ div {
     padding-top: 46px;
 }
 
+section {
+    scroll-margin-top: 6rem;
+}
+
 /*For navigation bar*/
 nav {
     overflow: hidden;
@@ -233,6 +237,11 @@ footer {
 .contact__content {
     padding-bottom: 6px;
 }
+
+.contact__content a{
+    text-decoration: underline;
+}
+
 label {
     display: inline-block;
 }
