@@ -78,7 +78,7 @@ li.logo {
     font-family: 'Syne', 'Oswald', sans-serif;
 }
 
-.section-paragraph {
+.about-me__paragraph {
     padding: 12px 24px 12px 0px;
 }
 
@@ -147,14 +147,63 @@ li.logo {
     filter: grayscale(100%);
 }
 /*Project section*/
-.projects-wrapper {
-    display: flex;
-    flex-wrap: wrap;
+
+.projects__heading-main {
+    padding-top: 15px;
+    padding-bottom: 25px;
 }
 
-.projects-wrapper div {
-    flex: 50%;
+.projects-wrapper
+ {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
 }
+
+.projects__image {
+    border-radius: 30px;
+    object-fit: cover;
+    border: 1px solid #3a3a3a;
+    height: 100%;
+}
+
+.projects__date {
+    font-size: 20px;
+    font-family: 'Oswald', 'Syne', sans-serif;
+    font-weight: 200;
+}
+
+.projects__heading {
+    font-size: 34px;
+    font-family: 'Oswald', 'Syne', sans-serif;
+    font-weight: 500;
+}
+
+.projects__paragraph {
+    font-size: 16px;
+    font-family: 'Questrial', 'Syne', sans-serif;
+
+    padding: 15px 0px;
+
+}
+.projects__text {
+    position: relative;
+}
+
+.projects__button {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+/*
+.projects__button--position {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+*/
 
 /*FOOTER*/
 
